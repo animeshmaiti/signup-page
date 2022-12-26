@@ -37,8 +37,6 @@ function moveSlider() {
 bullets.forEach((bullet) => {
     bullet.addEventListener("click", moveSlider);
 });
-// import firebase from "firebase/app";
-// import "firebase/auth";
 const firebaseApp = firebase.initializeApp({
     apiKey: "AIzaSyDV5ACAVylCvJLewxUZKRuvnNvqWeuZahI",
     authDomain: "auth-form-c6538.firebaseapp.com",
@@ -53,8 +51,9 @@ const db = firebaseApp.firestore();
 const auth = firebaseApp.auth();
 // //signup func
 const signUp = () => {
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+    const email = document.getElementById("emailUp").value;
+    const password = document.getElementById("passwordUp").value;
+    console.log(email,password)
     //firebase code
     firebase.auth().createUserWithEmailAndPassword(email, password)
         .then((userCredential) => {
@@ -71,8 +70,9 @@ const signUp = () => {
         });
 }
 const signIn = () => {
-    const email = document.getElementById("").value;
-    const password = document.getElementById("").value;
+    const email = document.getElementById("emailIn").value;
+    const password = document.getElementById("passwordIn").value;
+    console.log(email,password)
     firebase.auth().signInWithEmailAndPassword(email, password)
         .then((userCredential) => {
             // Signed in
