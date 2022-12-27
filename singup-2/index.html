@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    import { database } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"; -->
+    <script src="firebase-app.js"></script>
+    <script src="firebase-database.js"></script>
+    <script src="firebase-auth.js"></script>
+    <title>singup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content_container">
+        <div class="form_container">
+            <div class="form_content_container">
+                <input type="name" id="full_name" placeholder="Name">
+                <input type="email" id="emailUp" placeholder="Email">
+                <input type="password" id="passwordUp" placeholder="Password">
+                <input type="text" id="favourite_work" placeholder="Favourite Work">
+                <div id="button_container">
+                    <button onclick="signUp()">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
