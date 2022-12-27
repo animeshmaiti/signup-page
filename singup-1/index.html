@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore-compat.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
     <title>sing up</title>
 </head>
 
@@ -29,23 +29,23 @@
                         </div>
                         <div class="actual-form">
                             <div class="input-wrap">
-                                <input type="email" name="email" id="emailIn" minlength="4" class="input-field"
-                                    required>
+                                <input type="email" name="email" id="emailIn" minlength="4" class="input-field">
                                 <label for="email">Email</label>
                             </div>
                             <div class="input-wrap">
-                                <input type="password" name="password" id="passwordIn" minlength="4" class="input-field"
-                                    required>
+                                <input type="password" name="password" id="passwordIn" minlength="4" class="input-field">
                                 <label for="passwordIn">Password</label>
                             </div>
-                            <button id="signIn-btn" onclick="signIn()" type="submit" class="sign-btn">Sign In</button>
-                            <p class="text">
-                                Forgotten your password or you login details?
-                                <a href="#"> Get help</a> signing in
-                            </p>
                         </div>
                     </form>
-
+                    <div class="signInForm">
+                        <button id="signIn-btn" onclick="signIn()" type="submit" class="sign-btn">Sign In</button>
+                        <p class="text">
+                            Forgotten your password or you login details?
+                            <a href="#"> Get help</a> signing in
+                        </p>
+                    </div>
+                    
                     <form action="index.html" class="sign-up-form">
                         <div class="logo">
                             <img src="./img/logo.png" alt="website">
@@ -58,27 +58,26 @@
                         </div>
                         <div class="actual-form">
                             <div class="input-wrap">
-                                <input type="name" name="name" id="name" minlength="4" class="input-field"
-                                    required>
+                                <input type="name" name="name" id="full_name" minlength="4" class="input-field">
                                 <label for="name">Name</label>
                             </div>
                             <div class="input-wrap">
-                                <input type="email" name="email" id="emailUp" minlength="4" class="input-field"
-                                    required>
+                                <input type="email" name="email" id="emailUp" minlength="4" class="input-field">
                                 <label for="email">Email</label>
                             </div>
                             <div class="input-wrap">
-                                <input type="password" name="password" id="passwordUp" minlength="4" class="input-field"
-                                    required>
+                                <input type="password" name="password" id="passwordUp" minlength="4" class="input-field">
                                 <label for="passwordUp">Password</label>
                             </div>
-                            <button id="signUp-btn" onclick="signUp()" type="submit" class="sign-btn">Sign Up</button>
-                            <p class="text">
-                                By signing up, I agree to the <a href="#"> Terms of Services</a> and
-                                <a href="#">Privacy Policy</a>
-                            </p>
                         </div>
                     </form>
+                    <div class="singUpForm">
+                        <button id="signUp-btn" onclick="signUp()" type="submit" class="sign-btn">Sign Up</button>
+                        <p class="text">
+                            By signing up, I agree to the <a href="#"> Terms of Services</a> and
+                            <a href="#">Privacy Policy</a>
+                        </p>
+                    </div>
                 </div>
                 <div class="carousel">
                     <div class="images-wrapper">
